@@ -12,7 +12,7 @@ COPY --chown=node ./bun.lock .
 
 ENV NODE_ENV=production
 
-RUN --mount=type=cache,target=/usr/local/share/.cache bun install --production --frozen-lockfile
+RUN --mount=type=cache,target=/usr/local/share/.cache bun install --production
 
 
 
